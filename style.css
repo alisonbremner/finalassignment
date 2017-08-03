@@ -1,0 +1,311 @@
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.homeBlock {
+  display: flex;
+}
+
+header {
+  width: 100%;
+  padding: 0.5em;
+}
+
+.firstView {
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  left: 0px;
+  top: 0px;
+}
+
+.homeTextBlock {
+  width: 35%;
+  background-size: cover;
+  flex-direction: column;
+}
+
+.arrowsContainer {
+  align-self: center;
+}
+
+#arrows {
+  width: 100%;
+  height: 400px;
+}
+
+#tshirt {
+  height: 150px;
+  z-index: 2
+}
+
+.frontPage {
+  background-color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+}
+
+
+h1 {
+  font-size: 4.5em;
+  width: 45%;
+  font-family: Arial, sans-serif;
+  font-weight: 900;
+  margin-bottom: 0.5em;
+  padding-left: 0.25em;
+  margin-top: 0;
+}
+
+
+.fixedShirt {
+  height: 100px;
+  width: 15%;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  padding: 1em;
+  z-index: 2;
+}
+
+
+p {
+  font-size: 1.5em;
+  font-family: Arial, sans-serif;
+  font-weight:500;
+  line-height: 1.4;
+  padding-left: 1em;
+  margin: 0;
+  background-color: white;
+  width: 85%;
+}
+
+.containers {
+  display: flex;
+  height: 100vh;
+}
+
+.opening {
+  display: flex;
+  align-items:center;
+  background-color: white;
+}
+
+.openingText {
+  flex-direction: column;
+}
+
+.first {
+  width: 45%;
+}
+
+h2 {
+  width: 75%;
+  font-size: 2.5em;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  margin: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 0.5em;
+  line-height: 1.25;
+  background-color: white;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-family: Arial, sans-serif;
+    font-weight: 00;
+    width: 30%;
+    margin: 0;
+    line-height: 1.5;
+    padding-bottom: 0;
+}
+
+.text {
+  width: 33%;
+  background-color: white;
+  height: 100vh;
+  padding-top: 1em;
+}
+
+.blockTwo {
+  height: 100vh;
+  margin-top: 100vh;
+  display: flex;
+  width: 100%;
+}
+
+.blockThree {
+  background: url(.//images/drought.jpg);
+  background-size: cover;
+}
+
+.blockFour {
+  background: url(.//images/pollution.jpeg);
+  background-size: cover;
+}
+
+.blockFive {
+  background: url(.//images/factory.jpeg);
+  background-size: cover;
+}
+
+.blockSix {
+  background: url(.//images/clothing.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.blockSeven {
+  background: url(.//images/waste.jpeg);
+  background-size: cover;
+  height: 100vh;
+}
+
+img {
+  width: 66%;
+  margin: 0;
+  height: 100vh;
+}
+
+form {
+  padding: 1em;
+  background-color: white;
+}
+
+.userInput {
+  text-align: center;
+  font-size: 1em;
+  margin-top: 2px;
+  padding: 0.5em;
+  width: 50%;
+  font-family: Arial, sans-serif;
+}
+
+.button {
+  width: 55%;
+  font-size: 0.8em;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 1em 4em;
+  margin-top: 2px;
+  border: none;
+}
+
+.signUp {
+  flex-direction: column;
+}
+
+.learnMore {
+  font-weight: normal;
+  font-size: 1em;
+  padding: 0.5em 1.25em;
+  width: 50%;
+}
+
+
+a {
+  color: black;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1em;
+  display: none;
+}
+
+.mobileImage {
+  display: none;
+}
+
+.linkShow {
+padding-top: 5em;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 1166px) {
+
+.containers {
+  background-image: none;
+  height: auto;
+}
+
+.text {
+  width: 100%;
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
+
+p {
+  text-align: center;
+  width: 100%;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+  padding:0;
+}
+
+h2 {
+  text-align: center;
+  width: 100%;
+  padding: 0;
+}
+
+#tshirt {
+  display: none;
+}
+
+.first {
+  width: 100%;
+}
+
+#arrows {
+  display: none;
+}
+
+.mobileImage {
+  display: block;
+  width: auto;
+  min-width: 100%;
+}
+
+.learnMore {
+  width: 100%;
+}
+
+.userInput {
+  width: 86%;
+  padding-right: 1em;
+}
+
+.button {
+  width: 100%;
+}
+
+.homeTextBlock {
+  width: 100%;
+}
+
+header {
+  padding: 0;
+}
+
+.opening {
+  padding-bottom: 1em;
+}
+
+.forDesktop {
+  display: none;
+}
